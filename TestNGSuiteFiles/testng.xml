@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LoanDepartment"  parallel="tests" thread-count="5">
+ <listeners>
+ <listener class-name="TestUtils.Listeners"/>
+ </listeners>
+ 
+ 
+ <parameter name="xmlparameterized" value="valueparameterizedfromtestngxmlsuccessfully"></parameter>
+
+  <test name="PersonalLoan">
+       <parameter name="xmlparameterized1" value="valueparameterizedfromtestngxmlPersonalLoan1"></parameter>
+       <parameter name="xmlparameterized2" value="valueparameterizedfromtestngxmlPersonalLoan2"></parameter>
+
+    <classes>
+      <class name="Test.Test1"/>
+      <class name="Test.Test2"/>
+    </classes>
+  </test>
+  
+  <test name="CarLoan">
+     <classes>
+        <class name="Test.Test4">
+           <methods>
+             <exclude name="mobileLoginCarLoan">
+             </exclude>
+           </methods>
+        </class>
+     </classes>
+  </test>
+  
+  <test name="HomeLoan">
+     <parameter name="xmlparameterized" value="valueparameterizedfromtestngxmlHomeLoan"></parameter>
+
+    <classes>
+        <class name="Test.Test3">
+          <methods>
+            <exclude name="mobileLoginHomeLoan">
+            </exclude>
+          </methods>
+       </class>
+    </classes>
+  </test>
+  
+  <test name="RunningMethodsWithSimilarNames">
+   <classes>
+    <class name="Test.Test5">
+     <methods>
+      <include name="Mobile.*"/>
+     </methods>
+    </class>
+   </classes>
+  </test>
+  
+</suite>
