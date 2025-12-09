@@ -13,8 +13,8 @@ public class Test2 {
 	@Test
 	public void demo2() {
 	System.out.println("Test22 Second Testcase");
-	System.out.println("Test22 Second Testcase");
-
+	System.out.println("Test22 Second new workspace");
+	System.out.println("Test22 Second old workspace");
 	}
 
 
