@@ -13,12 +13,8 @@ public class Test2 {
 	@Test
 	public void demo2() {
 	System.out.println("Test22 Second Testcase");
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 84c1e5b (new push)
-	
+	System.out.println("Test22 Second Testcase");
 	
 	
 	
