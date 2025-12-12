@@ -15,10 +15,6 @@ public class Test2 {
 	System.out.println("Test22 Second Testcase");
 
 	
-	
-	
-	
-
 	}
 
 
