@@ -8,6 +8,7 @@ public class Test6 {
 	public void developBranch() {
 		
 		System.out.println("Develop brach first test case");
+		System.out.println("Develop brach second test case");
 	}
 
 }
